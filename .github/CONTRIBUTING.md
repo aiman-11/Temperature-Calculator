@@ -1,112 +1,131 @@
-# Temperature Calculator
+# Contributing to Temperature Calculator
 
-![GitHub issues](https://img.shields.io/github/issues/aiman-11/Temperature-Calculator)
-![GitHub forks](https://img.shields.io/github/forks/aiman-11/Temperature-Calculator?style=social)
-![GitHub stars](https://img.shields.io/github/stars/aiman-11/Temperature-Calculator?style=social)
+Thank you for your interest in contributing to this project! To ensure a smooth collaboration, please follow these guidelines before making contributions.
 
-## Table of Contents
-- [Overview](#overview)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation & Setup](#installation--setup)
-- [Usage](#usage)
-- [Example Interaction](#example-interaction)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+## 🛠 How to Contribute
 
-## Overview
-The **Temperature Calculator** is a simple console application built in **C#** that allows users to convert temperatures between different units. The application provides an interactive menu for users to select the conversion type and input a temperature value, displaying the converted result with proper formatting.
+### 1️⃣ Fork the Repository
+To contribute, you first need to create a personal copy of the repository.
 
-## Features
-- Convert **Celsius to Fahrenheit**
-- Convert **Fahrenheit to Celsius**
-- Convert **Celsius to Kelvin**
-- Convert **Kelvin to Celsius**
-- Convert **Fahrenheit to Kelvin**
-- Convert **Kelvin to Fahrenheit**
-- **User-friendly UI** with color-coded outputs
-- **Error handling** for invalid inputs
-- **Exit option** to safely close the application
+1. Navigate to the repository: [Temperature Calculator)](https://github.com/aiman-11/Temperature-Calculator.git).
+2. Click the **Fork** button at the top-right to create a copy under your GitHub account.
+3. Clone the forked repository to your local machine.
 
-## Technologies Used
-- **C#** (Console Application)
-- **.NET Framework/Core**
-
-## Installation & Setup
-1. **Clone the Repository:**
-   ```sh
-   git clone https://github.com/aiman-11/Temperature-Calculator.git
-   ```
-2. **Navigate to the Project Directory:**
-   ```sh
-   cd Temperature-Calculator
-   ```
-3. **Compile and Run the Application:**
-   - Using Visual Studio:
-     - Open the project in **Visual Studio**
-     - Press **F5** to run
-   - Using .NET CLI:
-     ```sh
-     dotnet run
-     ```
-
-## Usage
-1. Run the application.
-2. Select a conversion type by entering the corresponding number.
-3. Enter the temperature value when prompted.
-4. View the converted temperature displayed in a formatted output.
-5. Repeat the process or exit by selecting option `7`.
-
-## Example Interaction
-```
-=======================================
-       TEMPERATURE CALCULATOR       
-=======================================
-
-[1] Celsius to Fahrenheit
-[2] Fahrenheit to Celsius
-[3] Celsius to Kelvin
-[4] Kelvin to Celsius
-[5] Fahrenheit to Kelvin
-[6] Kelvin to Fahrenheit
-[7] Exit
-
-Enter your choice (1-7): 1
-Enter temperature value: 100
-
-=====================================
- Converted Temperature: 212.00 °F 
-=====================================
+```sh
+# Replace YOUR-USERNAME with your GitHub username
+git clone https://github.com/YOUR-USERNAME/Temperature-Calculator.git
+cd Temperature-Calculator
 ```
 
-## Project Structure
+---
+
+### 2️⃣ Set Up the Project Locally
+Ensure that you have the required development environment:
+
+- **Visual Studio** (or any preferred C# IDE)
+- **.NET SDK** (if applicable)
+
+After cloning, open the project in your IDE and ensure it runs without errors before making any changes.
+
+---
+
+### 3️⃣ Create a New Branch
+To keep the `main` branch stable, all changes should be made in a separate branch.
+
+```sh
+git checkout -b feature-branch-name
 ```
-Temperature-Calculator/
-│-- .github/
-│   │-- ISSUE_TEMPLATE/
-│   │-- CONTRIBUTING.md
-│   │-- CODE_OF_CONDUCT.md
-│-- Program.cs
-│-- README.md
-│-- LICENSE
+
+🔹 Use a meaningful branch name:
+- `feature-add-functionality`
+- `bugfix-issue-23`
+- `docs-update-readme`
+
+---
+
+### 4️⃣ Make Your Changes
+- Follow the existing project structure.
+- Keep code **clean, modular, and well-documented**.
+- Ensure **no errors or warnings** before committing.
+- If making UI changes (for console-based output), ensure **consistent formatting**.
+
+---
+
+### 5️⃣ Test Your Changes
+Before committing, ensure:
+- The application runs **without errors**.
+- New functionality works as expected.
+- No existing functionality is broken.
+
+---
+
+### 6️⃣ Commit and Push Changes
+After testing, commit your changes with a **clear and descriptive commit message**:
+
+```sh
+git add .
+git commit -m "Added temperature history & logging"
+git push origin feature-branch-name
 ```
 
-## Contributing
-We welcome contributions! If you'd like to contribute:
-1. **Fork the repository**
-2. **Create a new branch** (`feature-branch`)
-3. **Commit your changes**
-4. **Push to your branch**
-5. **Open a Pull Request**
+Commit message format:
+```
+<type>: <short description>
 
-For detailed contribution guidelines, check the [`CONTRIBUTING.md`](.github/CONTRIBUTING.md) file.
+<optional detailed description>
+```
+Examples:
+- `feat: temperature history & logging to temperature calculator`
+- `fix: Resolved issue with celcius to fahrenheit temperature calculator`
+- `docs: Updated README with new setup instructions`
 
-## License
-This project is open-source and available under the **MIT License**.
+---
 
-## Contact
-For any questions or suggestions, feel free to reach out!
-- **GitHub:** [aiman-11](https://github.com/aiman-11)
+### 7️⃣ Open a Pull Request (PR)
+Once your changes are pushed to your fork:
 
+1. Navigate to the **original repository** on GitHub.
+2. Click on **Pull Requests** → **New Pull Request**.
+3. Select **your feature branch** and compare it with `main`.
+4. Provide a **clear description** of your changes and reference any related issues.
+5. Click **Create Pull Request**.
+
+---
+
+## 📌 Issue Guidelines
+If you want to report a bug or request a feature, follow these steps:
+
+### 🔍 Before Submitting an Issue:
+- **Check existing issues** to avoid duplicates.
+- Ensure your issue is **clearly described**.
+
+### 📝 Creating an Issue:
+- Use a **clear title** that describes the problem.
+- Provide **detailed steps** to reproduce the issue.
+- Attach **screenshots or logs** (if applicable).
+- Suggest a **possible solution** if you have one.
+
+### 🏷 Issue Labels:
+- **`good first issue`**: Ideal for beginners.
+- **`help wanted`**: Needs assistance from contributors.
+- **`bug`**: A confirmed defect.
+- **`enhancement`**: A feature request or improvement.
+- **`documentation`**: Updates related to project docs.
+
+---
+
+## 🏗 Code Style Guidelines
+- Use **meaningful variable and function names**.
+- Maintain **proper indentation and spacing**.
+- Keep **methods short and focused** (avoid large functions).
+- Follow **C# best practices** for maintainability.
+
+---
+
+## 🤝 Need Help?
+If you need assistance:
+- Check the **Discussions** tab on GitHub.
+- Open an **Issue** with your question.
+- Contact the maintainer at **aimanrai113114@gmail.com**.
+
+Thank you for contributing! 🚀
