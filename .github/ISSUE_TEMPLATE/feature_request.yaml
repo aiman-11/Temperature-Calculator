@@ -1,41 +1,68 @@
-name: "💡 Feature Request"
-description: "Propose a new feature for the application."
-title: "[Feature] <short description>"
-labels: ["feature"]
+name: "Feature Request"
+description: "Suggest a new feature for the Temperature Calculator"
+title: "[Feature]: "
+labels: ["enhancement"]
+assignees:
+  - aiman-11
+
 body:
   - type: markdown
     attributes:
-      value: "## 💡 Feature Request\nPropose a new feature for the project."
+      value: |
+        ## 🚀 Feature Request
+        Thank you for suggesting an improvement! Please provide details below.
+
+  - type: input
+    id: feature_title
+    attributes:
+      label: "Feature Title"
+      description: "A short and clear title for the feature request."
+      placeholder: "Example: Add Temperature History Logging"
+    validations:
+      required: true
 
   - type: textarea
-    id: feature
+    id: feature_description
     attributes:
       label: "Feature Description"
-      description: "What new feature would you like to see?"
-      placeholder: "Describe the feature..."
+      description: "Explain what this feature does and why it's useful."
+      placeholder: "Describe the feature in detail..."
     validations:
       required: true
 
   - type: textarea
-    id: use_case
+    id: implementation_details
     attributes:
-      label: "Use Case"
-      description: "How will this feature be useful?"
-      placeholder: "Describe the purpose and benefit..."
+      label: "Proposed Implementation"
+      description: "How do you suggest this feature should be implemented?"
+      placeholder: "Provide implementation details if possible..."
     validations:
-      required: true
+      required: false
 
-  - type: textarea
-    id: alternatives
+  - type: dropdown
+    id: priority
     attributes:
-      label: "Alternative Solutions"
-      description: "Have you considered any alternatives?"
-      placeholder: "List any alternative solutions..."
-  
-  - type: checkboxes
-    id: additional
-    attributes:
-      label: "Additional Information"
+      label: "Priority"
+      description: "How urgent is this feature?"
       options:
-        - label: "I have searched for existing issues before opening this."
-          required: true
+        - Low
+        - Medium
+        - High
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: additional_context
+    attributes:
+      label: "Additional Context"
+      description: "Check any relevant points below:"
+      options:
+        - label: "This feature improves user experience"
+        - label: "This feature adds new functionality"
+        - label: "This feature fixes an existing limitation"
+
+  - type: textarea
+    id: additional_notes
+    attributes:
+      label: "Additional Notes (Optional)"
+      description: "Any extra details or references?"
