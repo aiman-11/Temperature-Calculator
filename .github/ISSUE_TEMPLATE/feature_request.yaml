@@ -1,68 +1,57 @@
-name: "Feature Request"
-description: "Suggest a new feature for the Temperature Calculator"
+name: "✨ Feature Request"
+description: "Suggest a new feature or improvement for the Temperature Calculator."
 title: "[Feature]: "
 labels: ["enhancement"]
-assignees:
-  - aiman-11
-
 body:
   - type: markdown
     attributes:
       value: |
-        ## 🚀 Feature Request
-        Thank you for suggesting an improvement! Please provide details below.
+        ## ✨ Feature Request
+        Thank you for taking the time to propose a new feature! Please provide as much detail as possible to help us understand your request.
 
   - type: input
-    id: feature_title
+    id: feature-title
     attributes:
-      label: "Feature Title"
-      description: "A short and clear title for the feature request."
-      placeholder: "Example: Add Temperature History Logging"
+      label: "Feature Summary"
+      description: "Briefly describe the feature in a single sentence."
+      placeholder: "Example: Add temperature history logging."
     validations:
       required: true
 
   - type: textarea
-    id: feature_description
+    id: feature-description
     attributes:
-      label: "Feature Description"
-      description: "Explain what this feature does and why it's useful."
+      label: "Detailed Description"
+      description: "Provide a clear and concise explanation of the feature. Include the problem it solves and why it is beneficial."
       placeholder: "Describe the feature in detail..."
     validations:
       required: true
 
   - type: textarea
-    id: implementation_details
+    id: use-case
     attributes:
-      label: "Proposed Implementation"
-      description: "How do you suggest this feature should be implemented?"
-      placeholder: "Provide implementation details if possible..."
-    validations:
-      required: false
-
-  - type: dropdown
-    id: priority
-    attributes:
-      label: "Priority"
-      description: "How urgent is this feature?"
-      options:
-        - Low
-        - Medium
-        - High
+      label: "Use Case / Benefits"
+      description: "Explain how this feature would be used and the benefits it provides."
+      placeholder: "This feature will allow users to track previous temperature conversions for reference."
     validations:
       required: true
 
-  - type: checkboxes
-    id: additional_context
-    attributes:
-      label: "Additional Context"
-      description: "Check any relevant points below:"
-      options:
-        - label: "This feature improves user experience"
-        - label: "This feature adds new functionality"
-        - label: "This feature fixes an existing limitation"
-
   - type: textarea
-    id: additional_notes
+    id: possible-implementation
     attributes:
-      label: "Additional Notes (Optional)"
-      description: "Any extra details or references?"
+      label: "Possible Implementation (Optional)"
+      description: "If you have any thoughts on how this could be implemented, describe them here."
+      placeholder: "We can store recent temperature calculations in a text file for history tracking."
+  
+  - type: dropdown
+    id: priority
+    attributes:
+      label: "Priority Level"
+      description: "How important is this feature?"
+      options:
+        - "Low"
+        - "Medium"
+        - "High"
+        - "Critical"
+    validations:
+      required: true
