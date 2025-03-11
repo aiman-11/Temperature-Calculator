@@ -1,10 +1,10 @@
-# Temperature Calculator
+# **Temperature Calculator & Live Weather Data**
 
 ![GitHub issues](https://img.shields.io/github/issues/aiman-11/Temperature-Calculator)
 ![GitHub forks](https://img.shields.io/github/forks/aiman-11/Temperature-Calculator?style=social)
 ![GitHub stars](https://img.shields.io/github/stars/aiman-11/Temperature-Calculator?style=social)
 
-## Table of Contents
+## **Table of Contents**
 - [Overview](#overview)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
@@ -16,54 +16,93 @@
 - [License](#license)
 - [Contact](#contact)
 
-## Overview
-The **Temperature Calculator** is a simple console application built in **C#** that allows users to convert temperatures between different units. The application provides an interactive menu for users to select the conversion type and input a temperature value, displaying the converted result with proper formatting.
+---
 
-## Features
-- Convert **Celsius to Fahrenheit**
-- Convert **Fahrenheit to Celsius**
-- Convert **Celsius to Kelvin**
-- Convert **Kelvin to Celsius**
-- Convert **Fahrenheit to Kelvin**
-- Convert **Kelvin to Fahrenheit**
-- **User-friendly UI** with color-coded outputs
-- **Error handling** for invalid inputs
-- **Exit option** to safely close the application
+## **Overview**
 
-## Technologies Used
-- **C#** (Console Application)
-- **.NET Framework/Core**
+The **Temperature Calculator & Live Weather Data** application is a **C# console-based tool** that allows users to:
 
-## Installation & Setup
-1. **Clone the Repository:**
-   ```sh
-   git clone https://github.com/aiman-11/Temperature-Calculator.git
-   ```
-2. **Navigate to the Project Directory:**
-   ```sh
-   cd Temperature-Calculator
-   ```
-3. **Compile and Run the Application:**
-   - Using Visual Studio:
-     - Open the project in **Visual Studio**
-     - Press **F5** to run
-   - Using .NET CLI:
-     ```sh
-     dotnet run
-     ```
+1. **Convert temperatures** between different units.
+2. **Fetch real-time weather details** for any city using an external weather API.
 
-## Usage
-1. Run the application.
-2. Select a conversion type by entering the corresponding number.
-3. Enter the temperature value when prompted.
-4. View the converted temperature displayed in a formatted output.
-5. Repeat the process or exit by selecting option `7`.
+It provides an **interactive menu**, error handling, and formatted output for a better user experience.
 
-## Example Interaction
+---
+
+## **Features**
+
+✅ Convert **Celsius, Fahrenheit, and Kelvin**  
+✅ Fetch **real-time weather data** for any city  
+✅ **Formatted output** with an easy-to-read UI  
+✅ **Error handling** for invalid inputs  
+✅ **User-friendly interactive menu**  
+
+---
+
+## **Technologies Used**
+
+- **C#** (.NET Console Application)
+- **.NET Core SDK**
+- **OpenWeather API** (for live weather data)
+
+---
+
+## **Installation & Setup**
+
+### **1. Clone the Repository:**
+```sh
+git clone https://github.com/aiman-11/Temperature-Calculator.git
 ```
+
+### **2. Navigate to the Project Directory:**
+```sh
+cd Temperature-Calculator
+```
+
+### **3. Build and Run the Application:**
+- **Using Visual Studio:**
+  - Open the project in **Visual Studio**
+  - Press **F5** to run
+- **Using .NET CLI:**
+```sh
+dotnet build
+dotnet run
+```
+
+---
+
+## **Usage**
+
+1. **Run the application.**
+2. **Select an option from the menu:**
+   - **[1] Convert Temperature**
+   - **[2] Get Live Weather Data**
+   - **[3] Exit**
+3. **For temperature conversion:**
+   - Choose a conversion type.
+   - Enter the temperature value.
+   - View the converted temperature.
+4. **For live weather data:**
+   - Enter the name of the city.
+   - View the temperature, humidity, wind speed, and weather conditions.
+5. **Repeat or exit the program.**
+
+---
+
+## **Example Interaction**
+
+### **Temperature Conversion**
+```sh
 =======================================
-       TEMPERATURE CALCULATOR       
+      TEMPERATURE CALCULATOR      
 =======================================
+
+[1] Convert Temperature
+[2] Get Live Weather Data
+[3] Exit
+
+Enter your choice (1-3): 1
+Enter temperature value: 100
 
 [1] Celsius to Fahrenheit
 [2] Fahrenheit to Celsius
@@ -71,30 +110,66 @@ The **Temperature Calculator** is a simple console application built in **C#** t
 [4] Kelvin to Celsius
 [5] Fahrenheit to Kelvin
 [6] Kelvin to Fahrenheit
-[7] Exit
 
-Enter your choice (1-7): 1
-Enter temperature value: 100
+Enter conversion option (1-6): 1
 
 =====================================
- Converted Temperature: 212.00 °F 
+ Converted Temperature: 212.00 °F
 =====================================
 ```
 
-## Project Structure
+### **Live Weather Data**
+```sh
+=======================================
+      LIVE WEATHER INFORMATION      
+=======================================
+
+Enter city name: London
+
+==================== Weather Details ====================
+ City: London
+ Temperature: 12.35°C
+ Feels Like: 10.8°C
+ Humidity: 81%
+ Wind Speed: 3.45 m/s
+ Weather: light rain
+=========================================================
+```
+
+---
+
+## **Project Structure**
 ```
 Temperature-Calculator/
+│-- TemperatureCalculator/
+│   │-- obj/
+│   │-- bin/
+│   │-- Properties/
+│   │-- Program.cs
+│   │-- TemperatureConverter.cs
+│   │-- WeatherService.cs
 │-- .github/
 │   │-- ISSUE_TEMPLATE/
 │   │-- CONTRIBUTING.md
 │   │-- CODE_OF_CONDUCT.md
-│-- Program.cs
+│-- TemperatureCalculator.sln
 │-- README.md
 │-- LICENSE
 ```
 
-## Contributing
+- **`Program.cs`** → Handles menu navigation and user interaction
+- **`TemperatureConverter.cs`** → Contains functions for temperature conversion
+- **`WeatherService.cs`** → Fetches live weather data from OpenWeather API
+- **`.github/`** → Contains GitHub-related files (issues, contribution guidelines, etc.)
+- **`obj/` & `bin/`** → Compiled binaries and build artifacts
+- **`TemperatureCalculator.sln`** → Solution file for the .NET project
+
+---
+
+## **Contributing**
+
 We welcome contributions! If you'd like to contribute:
+
 1. **Fork the repository**
 2. **Create a new branch** (`feature-branch`)
 3. **Commit your changes**
@@ -103,10 +178,18 @@ We welcome contributions! If you'd like to contribute:
 
 For detailed contribution guidelines, check the [`CONTRIBUTING.md`](.github/CONTRIBUTING.md) file.
 
-## License
+---
+
+## **License**
+
 This project is open-source and available under the [`MIT LICENSE`](LICENSE).
 
-## Contact
+---
+
+## **Contact**
+
 For any questions or suggestions, feel free to reach out!
+
 - **GitHub:** [aiman-11](https://github.com/aiman-11)
+
 
