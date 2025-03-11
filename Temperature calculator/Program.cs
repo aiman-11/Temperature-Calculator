@@ -32,7 +32,7 @@ class Program
             if (option == 3)
             {
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("\nThank you for using the application. Goodbye!\n");
+                Console.WriteLine("\nThank you for using the application. Goodbye! 👋\n");
                 Console.ResetColor();
                 break;
             }
