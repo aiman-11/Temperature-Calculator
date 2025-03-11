@@ -80,24 +80,14 @@ temperature-converter/
 │── CHANGELOG.md         # Log of changes and updates
 ```
 
-## Contributions
-Contributions are welcome! Follow these steps to contribute:
-1. Fork the repository.
-2. Create a new branch: `git checkout -b feature-branch`
-3. Make your changes and commit: `git commit -m 'Add new feature'`
-4. Push to the branch: `git push origin feature-branch`
-5. Open a Pull Request.
+## Contributing
+We welcome contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) to get started.
 
-Please read the `CONTRIBUTING.md` and `CODE_OF_CONDUCT.md` files before making contributions.
-
-## Security
-If you discover any security vulnerabilities, please refer to `SECURITY.md` for responsible disclosure guidelines.
+## Security Policy
+For reporting vulnerabilities, please refer to our [SECURITY.md](SECURITY.md).
 
 ## License
-This project is licensed under the **MIT License**. See the `LICENSE` file for more details.
-
-## Contact
-For any questions or suggestions, feel free to open an issue on GitHub or reach out via email at `aimanrai113114@gmail.com`.
+This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
 
 ---
 
