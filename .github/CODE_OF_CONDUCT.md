@@ -19,7 +19,7 @@ Unacceptable behavior includes:
 
 ## Reporting Issues
 If you witness or experience any violations of this Code of Conduct:
-- Contact the project maintainer at **ameerhamza92099@gmail.com**.
+- Contact the project maintainer at **aimanrai113114@gmail.com**.
 - Alternatively, report the issue by opening a confidential issue on GitHub.
 
 All reports will be handled **confidentially** and with fairness.
