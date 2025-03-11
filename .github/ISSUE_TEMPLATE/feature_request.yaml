@@ -1,57 +1,41 @@
-name: "✨ Feature Request"
-description: "Suggest a new feature or improvement for the Library Management System."
-title: "[Feature]: "
-labels: ["enhancement"]
+name: "💡 Feature Request"
+description: "Propose a new feature for the application."
+title: "[Feature] <short description>"
+labels: ["feature"]
 body:
   - type: markdown
     attributes:
-      value: |
-        ## ✨ Feature Request
-        Thank you for taking the time to propose a new feature! Please provide as much detail as possible to help us understand your request.
+      value: "## 💡 Feature Request\nPropose a new feature for the project."
 
-  - type: input
-    id: feature-title
+  - type: textarea
+    id: feature
     attributes:
-      label: "Feature Summary"
-      description: "Briefly describe the feature in a single sentence."
-      placeholder: "Example: Add support for exporting the book list to a CSV file."
+      label: "Feature Description"
+      description: "What new feature would you like to see?"
+      placeholder: "Describe the feature..."
     validations:
       required: true
 
   - type: textarea
-    id: feature-description
+    id: use_case
     attributes:
-      label: "Detailed Description"
-      description: "Provide a clear and concise explanation of the feature. Include the problem it solves and why it is beneficial."
-      placeholder: "Describe the feature in detail..."
+      label: "Use Case"
+      description: "How will this feature be useful?"
+      placeholder: "Describe the purpose and benefit..."
     validations:
       required: true
 
   - type: textarea
-    id: use-case
+    id: alternatives
     attributes:
-      label: "Use Case / Benefits"
-      description: "Explain how this feature would be used and the benefits it provides."
-      placeholder: "This feature will allow users to export book lists for easy record-keeping."
-    validations:
-      required: true
-
-  - type: textarea
-    id: possible-implementation
-    attributes:
-      label: "Possible Implementation (Optional)"
-      description: "If you have any thoughts on how this could be implemented, describe them here."
-      placeholder: "We can use a CSV library to generate and export the book list."
+      label: "Alternative Solutions"
+      description: "Have you considered any alternatives?"
+      placeholder: "List any alternative solutions..."
   
-  - type: dropdown
-    id: priority
+  - type: checkboxes
+    id: additional
     attributes:
-      label: "Priority Level"
-      description: "How important is this feature?"
+      label: "Additional Information"
       options:
-        - "Low"
-        - "Medium"
-        - "High"
-        - "Critical"
-    validations:
-      required: true
+        - label: "I have searched for existing issues before opening this."
+          required: true
