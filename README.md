@@ -1,7 +1,23 @@
-# Temperature Converter
+# Temperature Calculator
+
+![GitHub issues](https://img.shields.io/github/issues/aiman-11/Temperature-Calculator)
+![GitHub forks](https://img.shields.io/github/forks/aiman-11/Temperature-Calculator?style=social)
+![GitHub stars](https://img.shields.io/github/stars/aiman-11/Temperature-Calculator?style=social)
+
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation & Setup](#installation--setup)
+- [Usage](#usage)
+- [Example Interaction](#example-interaction)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
 ## Overview
-The **Temperature Converter** is a simple console-based application written in C#. It allows users to convert temperatures between different units, including Celsius, Fahrenheit, and Kelvin. The program provides an interactive menu where users can select the type of conversion they need and input the temperature value for conversion.
+The **Temperature Calculator** is a simple console application built in **C#** that allows users to convert temperatures between different units. The application provides an interactive menu for users to select the conversion type and input a temperature value, displaying the converted result with proper formatting.
 
 ## Features
 - Convert **Celsius to Fahrenheit**
@@ -10,42 +26,43 @@ The **Temperature Converter** is a simple console-based application written in C
 - Convert **Kelvin to Celsius**
 - Convert **Fahrenheit to Kelvin**
 - Convert **Kelvin to Fahrenheit**
-- User-friendly menu interface
-- Input validation to ensure correct numerical entries
-- Color-coded outputs for better readability
+- **User-friendly UI** with color-coded outputs
+- **Error handling** for invalid inputs
+- **Exit option** to safely close the application
 
-## Installation
-To run this application, you need to have **.NET SDK** installed on your system.
+## Technologies Used
+- **C#** (Console Application)
+- **.NET Framework/Core**
 
-### Steps to Install and Run:
-1. Clone the repository:
+## Installation & Setup
+1. **Clone the Repository:**
    ```sh
-   git clone https://github.com/your-username/temperature-converter.git
+   git clone https://github.com/aiman-11/Temperature-Calculator.git
    ```
-2. Navigate to the project directory:
+2. **Navigate to the Project Directory:**
    ```sh
-   cd temperature-converter
+   cd Temperature-Calculator
    ```
-3. Compile the program:
-   ```sh
-   dotnet build
-   ```
-4. Run the program:
-   ```sh
-   dotnet run
-   ```
+3. **Compile and Run the Application:**
+   - Using Visual Studio:
+     - Open the project in **Visual Studio**
+     - Press **F5** to run
+   - Using .NET CLI:
+     ```sh
+     dotnet run
+     ```
 
 ## Usage
-1. The application displays a menu with conversion options.
-2. Enter the corresponding number for your desired conversion.
-3. Input the temperature value when prompted.
-4. The converted temperature will be displayed.
-5. To exit, select option `7`.
+1. Run the application.
+2. Select a conversion type by entering the corresponding number.
+3. Enter the temperature value when prompted.
+4. View the converted temperature displayed in a formatted output.
+5. Repeat the process or exit by selecting option `7`.
 
-## Example Output
+## Example Interaction
 ```
 =======================================
-       TEMPERATURE CONVERTER       
+       TEMPERATURE CALCULATOR       
 =======================================
 
 [1] Celsius to Fahrenheit
@@ -57,39 +74,39 @@ To run this application, you need to have **.NET SDK** installed on your system.
 [7] Exit
 
 Enter your choice (1-7): 1
-
-Enter temperature value: 25
+Enter temperature value: 100
 
 =====================================
- Converted Temperature: 77.00 °F 
+ Converted Temperature: 212.00 °F 
 =====================================
 ```
 
-## File Structure
+## Project Structure
 ```
-temperature-converter/
-│── Program.cs           # Main application logic
-│── README.md            # Documentation
-│── .gitignore           # Ignoring unnecessary files
-│── LICENSE              # MIT License file
-│── SECURITY.md          # Security policy and vulnerability reporting
-│── CODE_OF_CONDUCT.md   # Community guidelines for behavior
-│── CONTRIBUTING.md      # Guidelines for contributing to the project
-│── ISSUE_TEMPLATE.md    # Template for reporting issues
-│── PULL_REQUEST_TEMPLATE.md # Template for submitting pull requests
-│── CHANGELOG.md         # Log of changes and updates
+Temperature-Calculator/
+│-- .github/
+│   │-- ISSUE_TEMPLATE/
+│   │-- CONTRIBUTING.md
+│   │-- CODE_OF_CONDUCT.md
+│-- Program.cs
+│-- README.md
+│-- LICENSE
 ```
 
 ## Contributing
-We welcome contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) to get started.
+We welcome contributions! If you'd like to contribute:
+1. **Fork the repository**
+2. **Create a new branch** (`feature-branch`)
+3. **Commit your changes**
+4. **Push to your branch**
+5. **Open a Pull Request**
 
-## Security Policy
-For reporting vulnerabilities, please refer to our [SECURITY.md](SECURITY.md).
+For detailed contribution guidelines, check the [`CONTRIBUTING.md`](.github/CONTRIBUTING.md) file.
 
 ## License
-This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
+This project is open-source and available under the [`MIT LICENSE`](LICENSE).
 
----
-
-Happy Coding! 🚀
+## Contact
+For any questions or suggestions, feel free to reach out!
+- **GitHub:** [aiman-11](https://github.com/aiman-11)
 
